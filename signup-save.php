@@ -1,11 +1,13 @@
 <?php
-	
+
+include 'db.php';
+
 $name=$_POST['name'];
 $mobile_no=$_POST['mobile_no'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
-include 'db.php';
+
 
 $q="insert into user value(NULL,'$name','$mobile_no','$email','$password')";
 $res=mysqli_query($conn,$q);
