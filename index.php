@@ -1,9 +1,9 @@
 <?php
  $hide_menu=true;
 include 'header.php';
-
 ?>
 
+<body style="background-color: #FF0000;">
 <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="height: 510px;">
