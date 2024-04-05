@@ -15,7 +15,7 @@
                   overflow-x: hidden;
             }
             .new_footer_area .footer_bottom {
-                padding-top: 5px;
+                padding-top: 6px;
                 padding-bottom: 50px;
             }
             .footer_bottom {
