@@ -50,7 +50,7 @@ $res = mysqli_query($conn, $q);
 
     </div>
 </div>
-</div>
+
 
 <?php
 include 'footer.php';
