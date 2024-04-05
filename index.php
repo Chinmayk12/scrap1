@@ -4,6 +4,7 @@ include 'header.php';
 
 ?>
 
+
 <body style="background-color: #f3f3f9;">
 <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -74,9 +75,22 @@ include 'header.php';
 
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5">
-        <div class="text-center mb-4">
+    <div class="container-fluid pt-3">
+        <!-- <div class="text-center mb-4">
             <h2 style="font-weight: 50px;"><b>Creative Products</b></h2>
+        </div> -->
+
+
+<!-- <div class="text-center mb-4">
+            <h2 style="font-weight: 50px;"><b>Creative Products</b></h2>
+        </div> -->
+
+        <div class="container12">
+          <div class="row">
+            <div class="col-md-12 text-center12">
+              <center><h3 class="animate-charcter"><b> Creative Products</b></h3></center><br>
+            </div>
+          </div>
         </div>
         <div class="row px-xl-5 pb-3">
             <?php
@@ -106,8 +120,17 @@ include 'header.php';
                     }
             ?>
         </div>
-<div class="text-center mb-4">
+<!-- <div class="text-center mb-4">
             <h2 style="font-weight: 50px;"><b>Scrap Products</b></h2>
+        </div> -->
+         <div class="container12">
+          <div class="row">
+            <div class="col-md-12 text-center12">
+                <center>
+              <h3 class="animate-charcter"><b> Scrap Products</b></h3>
+              </center>
+            </div>
+          </div>
         </div>
         <div class="row px-xl-5 pb-3">
         <?php
