@@ -46,17 +46,6 @@ if (isset($_SESSION['user'])) {
             </a>
         </div>
         <div class="col-lg-5 col-6 text-left">
-            <!--  <form action="">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for products">
-                    <div class="input-group-append">
-                        <span class="input-group-text bg-transparent text-primary">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </div>
-                </div>
-            </form>
--->
         </div>
         <div class="col-lg-4 col-6 text-right">
 
@@ -156,16 +145,9 @@ if (isset($_SESSION['user'])) {
                                     </div>
                                 </div>
                                 <a href="shop.php" class="nav-item nav-link">Shop</a>
-                                <!--  <a href="#" class="nav-item nav-link">Shop Detail</a>-->
-                                <!-- <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="cart.php" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.php" class="dropdown-item">Checkout</a>
-                                </div>
-                            </div> -->
                                 <a href="contact.php" class="nav-item nav-link">Contact</a>
                                 <a href="order.php" class="nav-item nav-link">Order Detail</a>
+                                <a href="post.php" class="nav-item nav-link">Posts</a>
                             </div>
                             <div class="col-lg-3 col-6 text-right">
 
