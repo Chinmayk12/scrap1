@@ -16,39 +16,39 @@ if (isset($_SESSION['user'])) {
                 <!-- start page title -->
                 <!-- end page title -->
                 <div class="row">
-        <div class="col-lg-12"> 
+        <div class="col-lg-12" > 
 
-            <div class="card">
+            <div class="card" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
                 <div class="card-header">
-                    <h5 class="">Contact Us</h5>
+                    <h5 class=""><b>Contact Us</b></h5>
                 </div>
                 <div class="card-body">
-                    <div class="row gy-3">
+                    <div class="row gy-3" >
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="amount">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" required="">
+                                <label for="amount"><b>Name</b></label>
+                                <input type="text" class="form-control" id="name" name="name" required="" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="qty">Email</label>
-                                <input type="text" class="form-control" id="email" name="email">
+                                <label for="qty"><b>Email</b></label>
+                                <input type="text" class="form-control" id="email" name="email" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="rate">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject">
+                                <label for="rate"><b>Subject</b></label>
+                                <input type="text" class="form-control" id="subject" name="subject" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
                             </div>
                         </div>
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="payment_details">Message</label>
-                                <textarea class="form-control" id="message" name="message"></textarea>
+                                <label for="payment_details"><b>Message</b></label>
+                                <textarea class="form-control" id="message" name="message" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"></textarea>
                             </div>
                         </div>
                         l̥
