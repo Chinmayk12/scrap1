@@ -88,7 +88,7 @@ include 'header.php';
         <div class="container12">
           <div class="row">
             <div class="col-md-12 text-center12">
-              <center><h3 class="animate-charcter"><b> Creative Products</b></h3></center><br>
+              <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;Creative Products</b></h3></center><br>
             </div>
           </div>
         </div>
