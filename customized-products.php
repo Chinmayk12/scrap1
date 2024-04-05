@@ -3,7 +3,7 @@ include 'header.php';
 include 'db.php'; // Include your database connection script
 
 // Query to fetch all posts from the database
-$q = "SELECT * FROM post";
+$q = "SELECT * FROM creative_product";
 $res = mysqli_query($conn, $q);
 
 ?>
@@ -23,7 +23,7 @@ $res = mysqli_query($conn, $q);
     <div class="row pb-3">
         <!-- Button for creating a post -->
         <div class="col-lg-12 d-flex justify-content-center">
-            <a href="create-post.php" class="btn btn-primary mb-5">Create Post</a>
+            <a href="create-customize-product.php" class="btn btn-primary mb-5">Create Customized Product</a>
         </div>
 
         <!-- Loop through each post and create a card -->
@@ -39,7 +39,7 @@ $res = mysqli_query($conn, $q);
             
                     <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text"><?php echo $row['message']; ?></p>
+                        <p class="card-text"><?php echo $row['description']; ?></p>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
                         <a href=""><i class="fas fa-heart text-primary mr-1"></i>Like</a>
