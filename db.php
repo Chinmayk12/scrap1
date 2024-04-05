@@ -1,5 +1,3 @@
 <?php
-
-$conn=mysqli_connect("localhost","root","","scrap1");
-
+    $conn=mysqli_connect("localhost","root","","scrap1");
 ?>
