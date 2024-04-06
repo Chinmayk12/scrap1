@@ -78,7 +78,7 @@ include 'header.php';
         </div>
         <div class="col-lg-4">
             </form>
-            <div class="card border-secondary mb-5">
+            <div class="card border-secondary mb-3">
                 <div class="card-header bg-secondary border-0">
                     <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
                 </div>
@@ -97,12 +97,10 @@ include 'header.php';
                         <h5 class="font-weight-bold">Total</h5>
                         <h5 class="font-weight-bold">₹ <?php echo $totalprice +100;?></h5>
                     </div>
-                    <form action="checkout.php" method="post">
+
                         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
                         <input type="hidden" name="price" value="<?php echo $totalprice;?>">
-                        <input type="submit" class="btn btn-block btn-primary my-3 py-3" value="Proceed To Checkout">
                         <!-- <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button></a>-->
-                    </form>
                 </div>
             </div>
             <div class="card border-secondary mb-5">
