@@ -7,7 +7,7 @@ $q = "SELECT * FROM post";
 $res = mysqli_query($conn, $q);
 
 ?>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-3">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
@@ -30,28 +30,32 @@ $res = mysqli_query($conn, $q);
         <?php
         while ($row = mysqli_fetch_assoc($res)) {
             ?>
-            <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
-                <div class="card product-item border-0 mb-0">
-                    <div class="card-header">
-                        <h4 class="card-title mb-0"><?php echo $row['name']; ?></h4>
-                    </div>
-                    <!-- <img class="img-fluid" src="./add-img/Python_compitition_payment.jpg" alt="Card image cap"> -->
-            
-                    <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text"><?php echo $row['message']; ?></p>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href=""><i class="fas fa-heart text-primary mr-1"></i>Like</a>
-                    </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-0">
+                <div class="card-header">
+                    <h4 class="card-title mb-0"><?php echo $row['name']; ?></h4>
+                </div>
+                <!-- <img class="img-fluid" src="./add-img/Python_compitition_payment.jpg" alt="Card image cap"> -->
+
+                <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text"><?php echo $row['message']; ?></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href=""><i onclick="myFunction(this)" class="fa fa-thumbs-up">Like</i></a>
                 </div>
             </div>
+        </div>
         <?php } ?>
 
     </div>
 </div>
 </div>
-
+<script>
+function myFunction(x) {
+    x.classList.toggle("fa-thumbs-down");
+}
+</script>
 <?php
 include 'footer.php';
 ?>

@@ -40,6 +40,14 @@ $res = mysqli_query($conn, $q);
                     <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text"><?php echo $row['description']; ?></p>
+                        <!-- Steps section -->
+                        <div class="steps" style="display: none;">
+                            <h5>Steps:</h5>
+                            <ul>
+                                <?php echo $row['steps']; ?>
+                            </ul>
+                        </div>
+                        <button class="btn btn-link steps-toggle" data-toggle="steps-<?php echo $row['id']; ?>">Show Steps</button>
                     </div>
                     <div class="card-footer d-flex justify-content-between bg-light border">
                         <a href=""><i class="fas fa-heart text-primary mr-1"></i>Like</a>
@@ -55,3 +63,23 @@ $res = mysqli_query($conn, $q);
 <?php
 include 'footer.php';
 ?>
+<script>
+    // Function to toggle steps visibility
+    function toggleSteps(elementId) {
+        var steps = document.getElementById(elementId);
+        if (steps.style.display === 'none') {
+            steps.style.display = 'block';
+        } else {
+            steps.style.display = 'none';
+        }
+    }
+
+    // Add click event listeners to all steps-toggle buttons
+    var stepsToggles = document.querySelectorAll('.steps-toggle');
+    stepsToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            var targetId = this.getAttribute('data-toggle');
+            toggleSteps(targetId);
+        });
+    });
+</script>
