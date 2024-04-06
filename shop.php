@@ -4,7 +4,7 @@ include 'header.php';
 
 <body style="background-color: #f3f3f9;">
     <!-- Page Header Start -->
-    <div class="container-fluid bg-secondary mb-5">
+    <div class="container-fluid bg-secondary mb-3 mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
             <center>
                         <h2 class="animate-charcter" style="font-size: 40px;"><b
