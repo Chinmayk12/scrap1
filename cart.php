@@ -77,7 +77,6 @@ include 'header.php';
             </table>
         </div>
         <div class="col-lg-4">
-           
             </form>
             <div class="card border-secondary mb-5">
                 <div class="card-header bg-secondary border-0">
@@ -104,6 +103,27 @@ include 'header.php';
                         <input type="submit" class="btn btn-block btn-primary my-3 py-3" value="Proceed To Checkout">
                         <!-- <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button></a>-->
                     </form>
+                </div>
+            </div>
+            <div class="card border-secondary mb-5">
+                <div class="card-header bg-secondary border-0">
+                    <h4 class="font-weight-semi-bold m-0">Payment</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <div class="custom-control custom-radio">
+                            <input type="hidden" name="totalprice" value="<?php echo $totalprice + 100; ?>">
+
+                            <input type="radio" class="custom-control-input" name="payment" value="COD" id="paypal"
+                                required>
+                            <label class="custom-control-label" for="paypal">COD</label>
+                            <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Place Order"
+                        class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">
+                    <!-- <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>-->
                 </div>
             </div>
         </div>
