@@ -30,8 +30,7 @@ $res = mysqli_query($conn, $q);
             <a href="#" onclick="window.location.href = validateLogin(); return false;"
                 class="btn btn-primary mb-5">Create Post</a>
         </div>
-
-
+        
         <script>
         function validateLogin() {
             // Check if the user is logged in
