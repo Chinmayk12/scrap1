@@ -6,17 +6,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $comment = $_POST['comment'];
 
     // Update the comment field in the database
-    $query = "UPDATE post SET comments = CONCAT_WS('<br>', comments, '$comment') WHERE id = '$productId'";
+    $query = "UPDATE post SET comments = '$comment' WHERE id = '$productId'";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
         // Comment updated successfully
-        echo "<script>alert('Comment added successfully');</script>";
+        echo "<script>alert('Comment updated successfully');</script>";
         echo "<script>window.location='post.php';</script>";
         
     } else {
         // Error updating comment
-        echo "<script>alert('Error adding comment');</script>";
+        echo "<script>alert('Error updating comment');</script>";
         echo "<script>window.location='post.php';</script>";
     }
 }
