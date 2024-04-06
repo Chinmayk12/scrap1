@@ -157,11 +157,11 @@ if (isset($_SESSION['user'])) {
                                         ?>
                                 </div>
                             </div>
-                            <!-- <a href="customized-products.php" class="nav-item nav-link">Customized Products</a> -->
+                            <a href="customized-products.php" class="nav-item nav-link">Customized Products</a>
                             <a href="shop.php" class="nav-item nav-link">Shop</a>
                             <a href="contact.php" class="nav-item nav-link">Contact</a>
-                            <!-- <a href="order.php" class="nav-item nav-link">Order Detail</a> -->
-                            <!-- <a href="post.php" class="nav-item nav-link">Posts</a> -->
+                            <a href="order.php" class="nav-item nav-link">Order Detail</a>
+                            <a href="post.php" class="nav-item nav-link">Posts</a>
 
                         </div>
                         <div class="col-lg-3 col-6 text-right">
