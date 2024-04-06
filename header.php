@@ -43,7 +43,7 @@ if (isset($_SESSION['user'])) {
         <div class="col-lg-3 d-none d-lg-block">
             <a href="index.php" class="text-decoration-none">
                 <h1 class="m-0 display-5 font-weight-semi-bold"><span
-                        class="text-primary font-weight-bold border px-3 mr-1">Scrap</span>Swap</h1>
+                        class="text-primary  border px-3 mr-1"><b>Scrap</b></span><b>Swap</b></h1>
             </a>
         </div>
         <div class="col-lg-5 col-6 text-left">
