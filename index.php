@@ -108,7 +108,7 @@ include 'header.php';
                         <img style="width:300px; height:300px;" class="img-fluid w-100" src="./user/<?php echo $products['image']; ?>" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                        <center><h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6><center>
                         <div class="d-flex justify-content-center">
                             <h6>₹ <?php echo $products['price']; ?></h6>
                         </div>
@@ -126,7 +126,7 @@ include 'header.php';
          <div class="container12">
           <div class="row">
             <div class="col-md-12 text-center12">
-               <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;Scrap Products &nbsp;</b></h3></center>
+               <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;&nbsp;Scrap Products &nbsp;</b></h3></center>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ include 'header.php';
                         <img style="width:300px; height:300px;" class="img-fluid w-100" src="./user/<?php echo $products['image']; ?>" alt="">
                     </div>
                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                        <center><h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6><center>
                         <div class="d-flex justify-content-center">
                             <h6>₹ <?php echo $products['price']; ?></h6>
                         </div>
@@ -161,13 +161,6 @@ include 'header.php';
     </div>
     <!-- Products End -->
 </body>
-
-
-  
-
-
-   
-
 
 <?php
 
