@@ -78,7 +78,7 @@
                         <li class="dropdown user-profile align-self-center d-inline-block">
                             <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
                                 <div class="media">
-                                    <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle"
+                                    <img src="dist/images/author1.jpg" alt="" class="d-flex img-fluid rounded-circle"
                                         width="29">
                                 </div>
                             </a>

@@ -23,11 +23,11 @@ $user_id = $data['user_id'];
         <!-- START: Card Data-->
         <div class="row">
             <div class="col-12 mt-4">
-                <div class="card">
+                <div class="card"  style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
                     <div class="card-header">
                         <h6 class="card-title">Address</h6>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content" >
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12">
@@ -38,22 +38,22 @@ $user_id = $data['user_id'];
                                                 <div class="col-md-6 form-group">
                                                     <label>Full Name : </label>
                                                     <input class="form-control" name="f_name" type="text"
-                                                        placeholder="first name" required>
+                                                        placeholder="first name" required style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <label>E-mail</label>
                                                     <input class="form-control" name="email" type="text"
-                                                        placeholder="email" required>
+                                                        placeholder="email" required style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <label>Mobile No. :</label>
                                                     <input class="form-control" name="mobile_no" type="text"
-                                                        placeholder="mobile no." required>
+                                                        placeholder="mobile no." required style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <label>Address with Pincode : </label>
                                                     <input class="form-control" name="address" type="text"
-                                                        placeholder="address" required>
+                                                        placeholder="address" required style="box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
                                                 </div>
                                             </div>
                                     </form> 
