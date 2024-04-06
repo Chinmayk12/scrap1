@@ -78,15 +78,6 @@ include 'header.php';
 
     <!-- Products Start -->
     <div class="container-fluid pt-3">
-        <!-- <div class="text-center mb-4">
-            <h2 style="font-weight: 50px;"><b>Creative Products</b></h2>
-        </div> -->
-
-
-        <!-- <div class="text-center mb-4">
-            <h2 style="font-weight: 50px;"><b>Creative Products</b></h2>
-        </div> -->
-
         <div class="container12">
             <div class="row">
                 <div class="col-md-12 text-center12">
