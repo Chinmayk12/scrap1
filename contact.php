@@ -10,7 +10,7 @@ if (isset($_SESSION['user'])) {
 <!-- Contact Start -->
 <div class="container-fluid pt-5">
     <div class="text-center mb-4">
-        <h2 class="section-title px-5"><span class="px-2">Contact For Any Queries</span></h2>
+        <b><h2 ><span class="px-2">Contact For Any Queries</span></h2></b>
     </div>
     <form action="contact-save.php" method="post" class="needs-validation">
                 <!-- start page title -->

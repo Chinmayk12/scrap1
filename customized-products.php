@@ -23,7 +23,7 @@ $res = mysqli_query($conn, $q);
     <div class="row pb-3">
         <!-- Button for creating a post -->
         <div class="col-lg-12 d-flex justify-content-center">
-            <a href="create-customize-product.php" class="btn btn-primary mb-5">Create Customized Product</a>
+            <a href="create-customize-product.php" class="btn btn-primary mb-5" >Create Customized Product</a>
         </div>
 
         <!-- Loop through each post and create a card -->
