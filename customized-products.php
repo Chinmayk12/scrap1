@@ -40,7 +40,7 @@ $res = mysqli_query($conn, $q);
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                             <a href="product-detail.php?id=<?php echo $products['product_id']; ?>">
-                                <img style="width:400px; height:230px;" class="img-fluid"
+                                <img style="width:400px; height:300px;" class="img-fluid"
                                     src="./user/<?php echo $products['image']; ?> " alt="">
                             </a>
                         </div>

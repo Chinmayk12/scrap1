@@ -67,7 +67,7 @@ include 'header.php';
                     style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                         <a href="product-detail.php?id=<?php echo $products['product_id'];?>">
-                            <center><img style="width:360px; height:230px;" class="img-fluid"
+                            <center><img style="width:360px; height:300px;" class="img-fluid"
                                     src="./user/<?php echo $products['image'];?> " alt="">
                                 <center>
                         </a>
