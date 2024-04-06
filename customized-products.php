@@ -31,10 +31,10 @@ $res = mysqli_query($conn, $q);
 
             <!-- Loop through each post and create a card -->
             <?php
-        if (!isset($_SESSION['user'])) {
-            echo "<script>alert('Login Please');window.location='login.php';</script>";
-        }else
-        {
+            if (!isset($_SESSION['user'])) {
+                echo "<script>alert('Login Please');window.location='login.php';</script>";
+            }else
+            {
         while ($products = mysqli_fetch_assoc($res)) {
         ?>
             <div class="row px-xl-5 pb-3">
@@ -44,7 +44,7 @@ $res = mysqli_query($conn, $q);
                         <div
                             class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                             <a href="product-detail.php?id=<?php echo $products['product_id']; ?>">
-                                <img style="width:400px; height:300px;" class="img-fluid"
+                                <img style="width:400px; height:230px;" class="img-fluid"
                                     src="./user/<?php echo $products['image']; ?> " alt="">
                             </a>
                         </div>

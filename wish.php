@@ -28,7 +28,10 @@ include 'header.php';
                         </tr>
                     </thead>
                     <?php
-                         if(isset($_SESSION['user']))
+                         if (!isset($_SESSION['user'])) {
+                            echo "<script>alert('Login Please');window.location='login.php';</script>";
+                         }
+                            if(isset($_SESSION['user']))
                          {
                             $data=$_SESSION['user'];
                             $user_id=$data['user_id'];

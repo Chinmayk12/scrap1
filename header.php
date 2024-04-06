@@ -53,7 +53,6 @@ if (isset($_SESSION['user'])) {
         <div class="col-lg-4 col-6 text-right">
 
             <?php
-
                 if (isset($data)) {
                     echo '<h6 style="text-transform:capitalize;">Welcome ' . $data['name'];
                     echo '<br>';
@@ -61,7 +60,6 @@ if (isset($_SESSION['user'])) {
                 } else {
                     echo ' <a style="color:red" href="login.php" class="btn border">Login</a>';
                 }
-
             ?>
 
             <a href="login-valid.php">
@@ -161,7 +159,7 @@ if (isset($_SESSION['user'])) {
                             <a href="shop.php" class="nav-item nav-link">Shop</a>
                             <a href="contact.php" class="nav-item nav-link">Contact</a>
                             <a href="order.php" class="nav-item nav-link">Order Detail</a>
-                            <a href="post.php" class="nav-item nav-link">Posts</a>
+                            <a href="post.php" class="nav-item nav-link">Community</a>
 
                         </div>
                         <div class="col-lg-3 col-6 text-right">

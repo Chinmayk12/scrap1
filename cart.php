@@ -2,6 +2,7 @@
 
 include 'header.php';
 
+
 ?>
 
 
@@ -32,7 +33,10 @@ include 'header.php';
                 </thead>
                 <?php
                       $totalprice=0;
-
+                      if (!isset($_SESSION['user'])) {
+                        echo "<script>alert('Login Please');window.location='login.php';</script>";
+                     }
+                        
                         if(isset($_SESSION['user']))
                         {
                             $data=$_SESSION['user'];
@@ -41,6 +45,7 @@ include 'header.php';
                             $q="select * from cart where user_id='$user_id'";
                             $res=mysqli_query($conn,$q);
                         }
+                        
                         while($cart=mysqli_fetch_array($res))
                         {
                            $product_id=$cart['product_id'];
@@ -77,53 +82,55 @@ include 'header.php';
             </table>
         </div>
         <div class="col-lg-4">
-            </form>
-            <div class="card border-secondary mb-3">
-                <div class="card-header bg-secondary border-0">
-                    <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between mb-3 pt-1">
-                        <h6 class="font-weight-medium">Subtotal</h6>
-                        <h6 class="font-weight-medium">₹<?php echo $totalprice;?></h6>
+            <form action="place-order-save.php" method="post">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header bg-secondary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <h6 class="font-weight-medium">Shipping</h6>
-                        <h6 class="font-weight-medium">₹ 100</h6>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3 pt-1">
+                            <h6 class="font-weight-medium">Subtotal</h6>
+                            <h6 class="font-weight-medium">₹<?php echo $totalprice;?></h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-medium">Shipping</h6>
+                            <h6 class="font-weight-medium">₹ 100</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card-footer border-secondary bg-transparent">
-                    <div class="d-flex justify-content-between mt-2">
-                        <h5 class="font-weight-bold">Total</h5>
-                        <h5 class="font-weight-bold">₹ <?php echo $totalprice +100;?></h5>
-                    </div>
+                    <div class="card-footer border-secondary bg-transparent">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5 class="font-weight-bold">Total</h5>
+                            <h5 class="font-weight-bold">₹ <?php echo $totalprice +100;?></h5>
+                        </div>
 
                         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
                         <input type="hidden" name="price" value="<?php echo $totalprice;?>">
                         <!-- <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button></a>-->
-                </div>
-            </div>
-            <div class="card border-secondary mb-5">
-                <div class="card-header bg-secondary border-0">
-                    <h4 class="font-weight-semi-bold m-0">Payment</h4>
-                </div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <div class="custom-control custom-radio">
-                            <input type="hidden" name="totalprice" value="<?php echo $totalprice + 100; ?>">
-
-                            <input type="radio" class="custom-control-input" name="payment" value="COD" id="paypal"
-                                required>
-                            <label class="custom-control-label" for="paypal">COD</label>
-                            <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
-                        </div>
                     </div>
-
-                    <input type="submit" value="Place Order"
-                        class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">
-                    <!-- <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>-->
                 </div>
-            </div>
+                <div class="card border-secondary mb-5">
+                    <div class="card-header bg-secondary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Payment</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="custom-control custom-radio">
+                                <input type="hidden" name="totalprice" value="<?php echo $totalprice + 100; ?>">
+
+                                <input type="radio" class="custom-control-input" name="payment" value="COD" id="paypal"
+                                    required>
+                                <label class="custom-control-label" for="paypal">COD</label>
+                                <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Place Order"
+                            class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">
+
+                        <!-- <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>-->
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

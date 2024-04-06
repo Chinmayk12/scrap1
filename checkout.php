@@ -26,7 +26,7 @@ if (isset($_SESSION['user'])) {
 
 <!-- Checkout Start -->
 <div class="container-fluid pt-5">
-    <div class="row px-xl-5">
+    <div class="row justify-content-center px-xl-5">
         <div class="col-lg-6">
             <div class="card border-secondary mb-5">
                 <?php
@@ -82,7 +82,6 @@ if (isset($_SESSION['user'])) {
                         class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">
                     <!-- <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>-->
                 </div>
-                </form>
             </div>
         </div>
     </div>

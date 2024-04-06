@@ -3,6 +3,7 @@
 include 'header.php';
 
 ?>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
@@ -24,6 +25,7 @@ include 'header.php';
                         <th>Total Price</th>
                         <th>Payment mode</th>
                         <th>Order status</th>
+                        <th>Action</th> <!-- Added this column for the delete button -->
                     </tr>
                 </thead>
                 <?php
@@ -44,7 +46,6 @@ include 'header.php';
                 <tbody class="align-middle">
                     <tr>
                         <td style="text-transform:capitalize;" class="align-middle"> <?php echo $data['first_name'];?>
-                            <?php echo $data['last_name'];?>
                         </td>
                         <td class="align-middle"> <?php echo $data['totalprice'];?>
                         </td>
@@ -52,6 +53,13 @@ include 'header.php';
                         </td>
                         <td>
                             <button class=" btn-danger ">pending</button>
+                        </td>
+                        <td>
+                            <!-- Added this column for the delete button -->
+                            <form action="delete-order.php" method="post">
+                                <input type="hidden" name="order_id" value="<?php echo $data['id']; ?>">
+                                <button class="btn btn-sm btn-danger deleteOrder">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 </tbody>
@@ -62,6 +70,30 @@ include 'header.php';
         </div>
     </div>
 </div>
+
+<script>
+// Use class name instead of id for delete button
+document.querySelectorAll('.deleteOrder').forEach(item => {
+    item.addEventListener('click', event => {
+        event.preventDefault(); // Prevent the default form submission
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Delete Order!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, Delete',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Submit the form
+                item.closest('form').submit();
+            }
+        });
+    });
+});
+</script>
+
 <?php
 
 include 'footer.php';
