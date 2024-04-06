@@ -54,7 +54,6 @@ include 'header.php';
                                     <tr>
                                         <td style="text-transform:capitalize;" class="align-middle">
                                             <?php echo $data['first_name']; ?>
-                                            <?php echo $data['last_name']; ?>
                                         </td>
                                         <td class="align-middle">
                                             <?php echo $data['totalprice']; ?>

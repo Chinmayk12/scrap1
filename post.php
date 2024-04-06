@@ -12,10 +12,10 @@ $res = mysqli_query($conn, $q);
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
         <center>
-                        <h2 class="animate-charcter" style="font-size: 40px;"><b
-                                style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
-                                &nbsp;Community Platform &nbsp;</b></h2>
-                    </center>
+            <h2 class="animate-charcter" style="font-size: 40px;"><b
+                    style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                    &nbsp;Community Platform &nbsp;</b></h2>
+        </center>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.php">Home</a></p>
             <p class="m-0 px-2">-</p>
@@ -27,7 +27,8 @@ $res = mysqli_query($conn, $q);
     <div class="row pb-3">
         <!-- Button for creating a post -->
         <div class="col-lg-12 d-flex justify-content-center">
-            <a href="create-post.php" class="btn btn-primary mb-5">Create Post</a>
+            <a href="#" onclick="window.location.href = validateLogin(); return false;"
+                class="btn btn-primary mb-5">Create Post</a>
         </div>
 
         <!-- Loop through each post and create a card -->
@@ -39,25 +40,64 @@ $res = mysqli_query($conn, $q);
                 <div class="card-header">
                     <h4 class="card-title mb-0"><?php echo $row['name']; ?></h4>
                 </div>
-                <!-- <img class="img-fluid" src="./add-img/Python_compitition_payment.jpg" alt="Card image cap"> -->
-
-                <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text"><?php echo $row['message']; ?></p>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                    <a href=""><i onclick="myFunction(this)" class="fa fa-thumbs-up">Like</i></a>
-                </div>
+                <!-- <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap"> -->
+                <a href="post-detail.php?id=<?php echo $row['id'];?>">
+                    <center><img style="width:360px; height:300px;" class="img-fluid" src="<?php echo $row['image'];?> "
+                            alt="">
+                        <center>
+                            <div class="card-body">
+                                <p class="card-text"><?php echo $row['description']; ?></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <!-- Like button with onclick event -->
+                                <a href="#" onclick="likePost(<?php echo $row['id']; ?>, this)">
+                                    <i class="fa fa-thumbs-up mt-2"></i> Like
+                                </a>
+                                <!-- Comment section -->
+                                <div>
+                                    <button class="btn btn-link" onclick="toggleComments(this)">Comments</button>
+                                    <div class="comments-section" style="display: none;">
+                                        <!-- Comment form -->
+                                        <form action="add-post-comments.php" method="post">
+                                            <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
+                                            <textarea class="form-control" name="comment"
+                                                placeholder="Write a comment..."></textarea>
+                                            <button type="submit" class="btn btn-primary mt-1">Post</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
             </div>
         </div>
         <?php } ?>
+
+        
 
     </div>
 </div>
 
 <script>
-function myFunction(x) {
-    x.classList.toggle("fa-thumbs-down");
+function validateLogin() {
+    // Check if the user is logged in
+    if (!<?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>) {
+        // If not logged in, show alert and return the login page URL
+        alert('Please login to create a post.');
+        return 'login.php'; // Redirect to the login page
+    }
+    // If logged in, return the create post page URL
+    return 'create-post.php';
+}
+
+function likePost(postId, element) {
+    // Here you can implement the logic to handle liking a post
+    // For now, let's just toggle the 'fa-thumbs-up' class
+    element.classList.toggle("fa-thumbs-down");
+}
+
+function toggleComments(button) {
+    // Toggle the display of the comments section
+    let commentsSection = button.nextElementSibling;
+    commentsSection.style.display = commentsSection.style.display === 'none' ? 'block' : 'none';
 }
 </script>
 <?php
