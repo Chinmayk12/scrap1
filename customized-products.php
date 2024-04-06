@@ -42,9 +42,10 @@ $res = mysqli_query($conn, $q);
                         <div class="card-header">
                             <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
                         </div>
-                       <div class="card-image">
-                            <img class="img-fluid hover:opacity-75" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                      </div>
+                        <div class="card-image">
+                            <img class="img-fluid hover:opacity-75" src="./<?php echo($row['image']); ?>"
+                                alt="Card image cap">
+                        </div>
 
                         <div class="card-text">
                             <p class="card-meal">Description:<?php echo $row['description']; ?></p>
@@ -54,7 +55,19 @@ $res = mysqli_query($conn, $q);
                             </ul>
                         </div>
                         <div class="card-price">₹<?php echo $row['price']; ?></div>
+
+                        <div class="card-footer d-flex justify-content-between bg-light border mt-2">
+                            <a href="wish-add.php?product_id=<?php echo $row['id']; ?>"><i
+                                    class="fas fa-heart text-primary"></i>Add Wish</a>
+                            <form action="cart-add.php">
+                                <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
+                                <input type="hidden" name="qty" value="1" min=1>
+                                <i class="fas fa-shopping-cart text-primary mr-1"></i>
+                                <input class="btn btn-sm text-dark p-0" type="submit" value="Add To Cart">
+                            </form>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <?php } 
