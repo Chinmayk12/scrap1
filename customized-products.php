@@ -28,11 +28,16 @@ $res = mysqli_query($conn, $q);
 
         <!-- Loop through each post and create a card -->
         <?php
+        if (!isset($_SESSION['user'])) {
+            echo "<script>alert('Login Please');window.location='login.php';</script>";
+        }else
+        {
         while ($row = mysqli_fetch_assoc($res)) {
-            ?>
+        ?>
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="card" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; " >
+                <div class="card"
+                    style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; ">
                     <div class="card-header">
                         <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
                     </div>
@@ -50,7 +55,9 @@ $res = mysqli_query($conn, $q);
                 </div>
             </div>
         </div>
-        <?php } ?>
+        <?php } 
+        }
+        ?>
 
     </div>
 </div>
@@ -122,7 +129,7 @@ stepsToggles.forEach(function(toggle) {
 }
 
 .card-image {
-    width: 400px;
+    width: 368px;
     height: 250px;
 }
 

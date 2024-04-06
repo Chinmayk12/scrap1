@@ -11,7 +11,7 @@ include 'header.php';
     </div>
 </div>
 <div class="container-fluid pt-5" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-    <div class="row px-xl-12" >
+    <div class="row px-xl-12">
         <div class="col-lg-12 table-responsive mb-5">
             <table class="table table-bordered text-center mb-0">
                 <thead class="bg-secondary text-dark">
@@ -39,16 +39,17 @@ include 'header.php';
                 ?>
                 <tbody class="align-middle">
                     <tr>
-                        <td style="text-transform:capitalize;" class="align-middle"> <?php echo $data['first_name'];?> <?php echo $data['last_name'];?>
-                            </td>
-                            <td class="align-middle"> <?php echo $data['totalprice'];?>
-                            </td>
-                            <td class="align-middle"> <?php echo $data['payment'];?>
-                            </td>
-                            <td>
+                        <td style="text-transform:capitalize;" class="align-middle"> <?php echo $data['first_name'];?>
+                            <?php echo $data['last_name'];?>
+                        </td>
+                        <td class="align-middle"> <?php echo $data['totalprice'];?>
+                        </td>
+                        <td class="align-middle"> <?php echo $data['payment'];?>
+                        </td>
+                        <td>
                             <button class=" btn-danger ">pending</button>
-                </td>
-                                  </tr>
+                        </td>
+                    </tr>
                 </tbody>
                 <?php
                 }
