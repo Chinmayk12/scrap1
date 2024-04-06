@@ -45,7 +45,7 @@ $res = mysqli_query($conn, $q);
                         <?php echo $row['steps']; ?>
                     </ul>
                 </div>
-                <div class="card-price">$<?php echo $row['price']; ?></div>
+                <div class="card-price">₹<?php echo $row['price']; ?></div>
             </div>
         </div>
         <?php } ?>
