@@ -11,11 +11,11 @@ $res = mysqli_query($conn, $q);
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-3">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Posts</h1>
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Customized Products</h1>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.php">Home</a></p>
             <p class="m-0 px-2">-</p>
-            <p class="m-0">Posts</p>
+            <p class="m-0">Customized Products</p>
         </div>
     </div>
 </div>
@@ -30,22 +30,24 @@ $res = mysqli_query($conn, $q);
         <?php
         while ($row = mysqli_fetch_assoc($res)) {
             ?>
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
+        <div class="row px-xl-5 pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
+                    </div>
+                    <div class="card-image">
+                        <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-meal">Description:<?php echo $row['description']; ?></p>
+                        <p class="card-body">Steps To Create Product:</p>
+                        <ul>
+                            <?php echo $row['steps']; ?>
+                        </ul>
+                    </div>
+                    <div class="card-price">₹<?php echo $row['price']; ?></div>
                 </div>
-                <div class="card-image">
-                    <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                </div>
-                <div class="card-text">
-                    <p class="card-meal">Description:<?php echo $row['description']; ?></p>
-                    <p class="card-body">Steps To Create Product:</p>
-                    <ul>
-                        <?php echo $row['steps']; ?>
-                    </ul>
-                </div>
-                <div class="card-price">₹<?php echo $row['price']; ?></div>
             </div>
         </div>
         <?php } ?>

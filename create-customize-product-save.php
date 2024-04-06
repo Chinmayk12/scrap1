@@ -18,7 +18,7 @@ include 'db.php'; // Include your database connection script
     $res = mysqli_query($conn, $q);
 
     if ($res) {
-        echo "<script>alert('Product created successfully.'); window.location='post.php';</script>";
+        echo "<script>alert('Product created successfully.'); window.location='customized-products.php';</script>";
     } else {
         echo "<script>alert('Failed to create Product. Please try again.'); window.history.back();</script>";
     }
