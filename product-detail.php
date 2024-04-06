@@ -31,7 +31,7 @@ include 'header.php';
         ?>
             <div class="col-lg-5 pb-5">
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner border">
+                    <div class="carousel-inner border" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                         <div class="carousel-item active">
                             <img class="w-100 h-100" src="./user/<?php echo $data['image']; ?>" alt="Image">
                         </div>
