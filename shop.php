@@ -90,6 +90,6 @@ include 'header.php';
 
     <body y>
 
-        <?php
+<?php
 include 'footer.php';
 ?>
