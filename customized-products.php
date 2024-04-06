@@ -42,9 +42,10 @@ $res = mysqli_query($conn, $q);
                         <div class="card-header">
                             <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
                         </div>
-                        <div class="card-image">
-                            <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                        </div>
+                       <div class="card-image">
+                            <img class="img-fluid hover:opacity-75" src="./<?php echo($row['image']); ?>" alt="Card image cap">
+                      </div>
+
                         <div class="card-text">
                             <p class="card-meal">Description:<?php echo $row['description']; ?></p>
                             <p class="card-body">Steps To Create Product:</p>
