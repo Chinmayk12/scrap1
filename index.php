@@ -130,22 +130,10 @@ include 'header.php';
         <!-- <div class="text-center mb-4">
             <h2 style="font-weight: 50px;"><b>Scrap Products</b></h2>
         </div> -->
-<<<<<<< HEAD
          <div class="container12">
           <div class="row">
             <div class="col-md-12 text-center12">
                <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;&nbsp;Scrap Products &nbsp;</b></h3></center>
-=======
-        <div class="container12">
-            <div class="row">
-                <div class="col-md-12 text-center12">
-                    <center>
-                        <h3 class="animate-charcter"><b
-                                style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
-                                &nbsp;Scrap Products &nbsp;</b></h3>
-                    </center>
-                </div>
->>>>>>> eb719f9f3142fe88520377effc2e2c9dbef97f48
             </div>
         </div>
         <div class="row px-xl-5 pb-3">

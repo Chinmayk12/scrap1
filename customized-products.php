@@ -32,7 +32,7 @@ $res = mysqli_query($conn, $q);
             ?>
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="card">
+                <div class="card" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; " >
                     <div class="card-header">
                         <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
                     </div>
