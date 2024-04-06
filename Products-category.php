@@ -65,11 +65,11 @@ include 'header.php';
             <div class="card product-item border-0 mb-4"  style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" >
                 <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                     <a href="product-detail.php?id=<?php echo $products['product_id'];?>" >
-                        <img style="width:300px; height:230px;" class="img-fluid" src="./user/<?php echo $products['image'];?> "   alt=""  >
+                        <center><img style="width:300px; height:230px;" class="img-fluid" src="./user/<?php echo $products['image'];?> "   alt=""  ><center>
                     </a>
                 </div>
                 <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                    <h6 style="text-transform:uppercase;" class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                    <center><h6 style="text-transform:uppercase;" class="text-truncate mb-3"><?php echo $products['name']; ?></h6></center>
                     <div class="d-flex justify-content-center">
                         <h6>₹ <?php echo $products['price']; ?></h6>
                     </div>
