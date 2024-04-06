@@ -40,10 +40,6 @@ if (isset($_SESSION['user'])) {
                             <label>Full Name : </label>
                             <input class="form-control" name="f_name" type="text" placeholder="first name" required>
                         </div>
-                        <!-- <div class="col-md-6 form-group">
-                            <label>Last Name</label>
-                            <input class="form-control" name="l_name" type="text" placeholder="last name" required>
-                        </div> -->
                         <div class="col-md-6 form-group">
                             <label>E-mail</label>
                             <input class="form-control" name="email" type="text" placeholder="email" required>
@@ -52,22 +48,6 @@ if (isset($_SESSION['user'])) {
                             <label>Mobile No. :</label>
                             <input class="form-control" name="mobile_no" type="text" placeholder="mobile no." required>
                         </div>
-                       <!--  <div class="col-md-6 form-group">
-                            <label>Country</label>
-                            <input class="form-control" name="country" type="text" placeholder="Country" required>
-                        </div> -->
-                        <!-- <div class="col-md-6 form-group">
-                            <label>state</label>
-                            <input class="form-control" name="state" type="text" placeholder="state" required>
-                        </div> -->
-                        <!-- <div class="col-md-6 form-group">
-                            <label>tail</label>
-                            <input class="form-control" name="tail" type="text" placeholder="tail" required>
-                        </div> -->
-                       <!--  <div class="col-md-6 form-group">
-                            <label>City</label>
-                            <input class="form-control" name="city" type="text" placeholder="city name" required>
-                        </div> -->
                         <div class="col-md-6 form-group">
                             <label>Address with Pincode : </label>
                             <input class="form-control" name="address" type="text" placeholder="address" required>

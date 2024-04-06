@@ -107,6 +107,7 @@
                         <li class="active"><a href="index.php"><i class="icon-layers"></i>Dashboard</a></li>
                         <li><a href="products.php"><i class="icon-layers"></i>My Products</a></li>
                         <li><a href="my-order.php"><i class="icon-layers"></i>My Orders</a></li>
+                        <li><a href="add-address.php"><i class="icon-layers"></i>My Address</a></li>
                     </ul>
 
                 </li>
