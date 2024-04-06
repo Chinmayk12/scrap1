@@ -1,6 +1,4 @@
 <?php
-
-
 include 'header.php';
 
 if (isset($_SESSION['user'])) {
@@ -16,8 +14,6 @@ if (isset($_SESSION['user'])) {
     if ($data == 0) {
         echo "<script>alert('No products added in cart, Please add product.');window.history.back();</script>";
     }
-
-
 ?>
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
@@ -31,31 +27,7 @@ if (isset($_SESSION['user'])) {
 <!-- Checkout Start -->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5">
-        <div class="col-lg-8">
-            <form action="checkout-save.php" method="post">
-                <div class="mb-4">
-                    <h4 class="font-weight-semi-bold mb-4">Billing Address</h4>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label>Full Name : </label>
-                            <input class="form-control" name="f_name" type="text" placeholder="first name" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>E-mail</label>
-                            <input class="form-control" name="email" type="text" placeholder="email" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Mobile No. :</label>
-                            <input class="form-control" name="mobile_no" type="text" placeholder="mobile no." required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Address with Pincode : </label>
-                            <input class="form-control" name="address" type="text" placeholder="address" required>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <div class="card border-secondary mb-5">
                 <?php
 

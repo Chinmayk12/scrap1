@@ -27,41 +27,43 @@ $user_id = $data['user_id'];
                     <div class="card-header">
                         <h6 class="card-title">Address</h6>
                     </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <form action="product-add-save.php" method="post" enctype="multipart/form-data">
-                                        <div class="form-row">
-                                            <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
-                                            <div class="row">
-                                                <div class="col-md-6 form-group">
-                                                    <label>Full Name : </label>
-                                                    <input class="form-control" name="f_name" type="text"
-                                                        placeholder="first name" required>
+                    <form action="add-address-save.php" method="post">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <form action="product-add-save.php" method="post" enctype="multipart/form-data">
+                                            <div class="form-row">
+                                                <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+                                                <div class="row">
+                                                    <div class="col-md-6 form-group">
+                                                        <label>Full Name : </label>
+                                                        <input class="form-control" name="name" type="text"
+                                                            placeholder="first name" required>
+                                                    </div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label>E-mail</label>
+                                                        <input class="form-control" name="email" type="text"
+                                                            placeholder="email" required>
+                                                    </div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label>Mobile No. :</label>
+                                                        <input class="form-control" name="mobileno" type="text"
+                                                            placeholder="mobileno" required>
+                                                    </div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label>Address with Pincode : </label>
+                                                        <input class="form-control" name="address" type="text"
+                                                            placeholder="address" required>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6 form-group">
-                                                    <label>E-mail</label>
-                                                    <input class="form-control" name="email" type="text"
-                                                        placeholder="email" required>
-                                                </div>
-                                                <div class="col-md-6 form-group">
-                                                    <label>Mobile No. :</label>
-                                                    <input class="form-control" name="mobile_no" type="text"
-                                                        placeholder="mobile no." required>
-                                                </div>
-                                                <div class="col-md-6 form-group">
-                                                    <label>Address with Pincode : </label>
-                                                    <input class="form-control" name="address" type="text"
-                                                        placeholder="address" required>
-                                                </div>
-                                            </div>
-                                    </form> 
+                                        </form>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Add Address</button>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Add Address</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
