@@ -12,10 +12,10 @@ $res = mysqli_query($conn, $q);
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
         <center>
-                        <h2 class="animate-charcter" style="font-size: 40px;"><b
-                                style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
-                                &nbsp;Community Platform &nbsp;</b></h2>
-                    </center>
+            <h2 class="animate-charcter" style="font-size: 40px;"><b
+                    style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                    &nbsp;Community Platform &nbsp;</b></h2>
+        </center>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.php">Home</a></p>
             <p class="m-0 px-2">-</p>
@@ -27,8 +27,25 @@ $res = mysqli_query($conn, $q);
     <div class="row pb-3">
         <!-- Button for creating a post -->
         <div class="col-lg-12 d-flex justify-content-center">
-            <a href="create-post.php" class="btn btn-primary mb-5">Create Post</a>
+            <a href="#" onclick="window.location.href = validateLogin(); return false;"
+                class="btn btn-primary mb-5">Create Post</a>
         </div>
+
+
+        <script>
+        function validateLogin() {
+            // Check if the user is logged in
+            if (!<?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>) {
+                // If not logged in, show alert and return the login page URL
+                alert('Please login to create a post.');
+                return 'login.php'; // Redirect to the login page
+            }
+            // If logged in, return the create post page URL
+            return 'create-post.php';
+        }
+        </script>
+
+        </script>
 
         <!-- Loop through each post and create a card -->
         <?php
