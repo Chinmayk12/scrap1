@@ -11,7 +11,7 @@ $res = mysqli_query($conn, $q);
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-3">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Customized Products</h1>
+         <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;&nbsp;Customized Products &nbsp;</b></h3></center>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.php">Home</a></p>
             <p class="m-0 px-2">-</p>

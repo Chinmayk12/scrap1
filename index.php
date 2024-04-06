@@ -2,8 +2,9 @@
  $hide_menu=true;
 include 'header.php';
 ?>
+
 <body style="background-color: #f3f3f9;">
-    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+    <div id="header-carousel" class="carousel slide" data-ride="carousel" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
         <div class="carousel-inner">
             <div class="carousel-item active" style="height: 510px;">
                 <img class="img-fluid" src="img/image1.jpg" alt="Image">
