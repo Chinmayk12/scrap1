@@ -14,7 +14,7 @@ include 'header.php';
                     <div class="w-sm-100 mr-auto">
                         <h3 style="padding-left:15px;" class="mb-0"><b>My Orders</b></h3>
                     </div>
-                  
+
 
                 </div>
             </div>
@@ -50,24 +50,24 @@ include 'header.php';
                                 while ($data = mysqli_fetch_array($res)) {
 
                                     ?>
-                                    <tbody class="align-middle">
-                                        <tr>
-                                            <td style="text-transform:capitalize;" class="align-middle">
-                                                <?php echo $data['first_name']; ?>
-                                                <?php echo $data['last_name']; ?>
-                                            </td>
-                                            <td class="align-middle">
-                                                <?php echo $data['totalprice']; ?>
-                                            </td>
-                                            <td class="align-middle">
-                                                <?php echo $data['payment']; ?>
-                                            </td>
-                                            <td>
-                                                <button class=" btn-success ">New Order</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <?php
+                                <tbody class="align-middle">
+                                    <tr>
+                                        <td style="text-transform:capitalize;" class="align-middle">
+                                            <?php echo $data['first_name']; ?>
+                                            <?php echo $data['last_name']; ?>
+                                        </td>
+                                        <td class="align-middle">
+                                            <?php echo $data['totalprice']; ?>
+                                        </td>
+                                        <td class="align-middle">
+                                            <?php echo $data['payment']; ?>
+                                        </td>
+                                        <td>
+                                            <button class=" btn-success ">New Order</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <?php
 
                                 }
                                 ?>
@@ -78,8 +78,8 @@ include 'header.php';
                 </div>
             </div>
 
-
-            <?php
+        </div>
+        <?php
 
             include 'footer.php';
 
