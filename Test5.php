@@ -1,3 +1,3 @@
 <?php
-    echo "Hello From Yashwant Karnawat";
+    echo "Hello From Yashwant";
 ?>
