@@ -10,8 +10,8 @@ include 'header.php';
 
     </div>
 </div>
-<div class="container-fluid pt-5">
-    <div class="row px-xl-12">
+<div class="container-fluid pt-5" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+    <div class="row px-xl-12" >
         <div class="col-lg-12 table-responsive mb-5">
             <table class="table table-bordered text-center mb-0">
                 <thead class="bg-secondary text-dark">
@@ -48,7 +48,7 @@ include 'header.php';
                             <td>
                             <button class=" btn-danger ">pending</button>
                 </td>
-                                          </tr>
+                                  </tr>
                 </tbody>
                 <?php
                 }

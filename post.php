@@ -31,7 +31,7 @@ $res = mysqli_query($conn, $q);
         while ($row = mysqli_fetch_assoc($res)) {
             ?>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-0">
+            <div class="card product-item border-0 mb-0" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <div class="card-header">
                     <h4 class="card-title mb-0"><?php echo $row['name']; ?></h4>
                 </div>
@@ -50,16 +50,12 @@ $res = mysqli_query($conn, $q);
 
     </div>
 </div>
-<<<<<<< HEAD
 </div>
 <script>
 function myFunction(x) {
     x.classList.toggle("fa-thumbs-down");
 }
 </script>
-=======
-
->>>>>>> b3cb6499ea5ab012a4b645e096ca51fd2af3573b
 <?php
 include 'footer.php';
 ?>

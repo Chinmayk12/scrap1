@@ -43,9 +43,9 @@ include 'header.php';
         $res = mysqli_query($conn, $q);
         while ($products = mysqli_fetch_array($res)) {
         ?>
-        <div class="col-lg-3 col-md-12 col-sm-12 pb-1 mb-3"  >
+        <div class="col-lg-3 col-md-12 col-sm-12 pb-1 mb-3">
             <div>
-                 <div class="card product-item border-0 mb-0">
+                 <div class="card product-item border-0 mb-0" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                 <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                     <a href="product-detail.php?id=<?php echo $products['product_id']; ?>">
                         <img style="width:300px; height:230px;" class="img-fluid"
