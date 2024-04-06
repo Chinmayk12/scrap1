@@ -52,8 +52,8 @@ include 'header.php';
                                                         <select name="type" class="form-control rounded">
                                                         <option >--Category Type--</option>
                                                         <option value="scrap" <?php echo $product['type'] == 'scrap' ? 'selected' : ''; ?>>Scrap</option>
-                                                            <option value="creative"  <?php echo $product['type'] == 'creative' ? 'selected' : ''; ?>>Creative</option>
-                                                            
+                                                        <option value="creative"  <?php echo $product['type'] == 'creative' ? 'selected' : ''; ?>>Creative</option>
+                                                        <option value="customize"  <?php echo $product['type'] == 'customize' ? 'selected' : ''; ?>>Customize</option>    
                                                         </select>
                                                     </div>
                                             <div class="form-group col-md-12">
@@ -88,7 +88,6 @@ include 'header.php';
                                                 <input type="text" name="detail" class="form-control" id="inputPassword4" value="<?php echo $product['detail']; ?>">
                                             </div>
                                         </div>
-
 
                                         <button type="submit" class="btn btn-primary">Edit Product</button>
                                     </form>

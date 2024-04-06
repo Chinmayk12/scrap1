@@ -3,7 +3,7 @@ include 'header.php';
 include 'db.php'; // Include your database connection script
 
 // Query to fetch all posts from the database
-$q = "SELECT * FROM creative_product";
+$q = "select * from products where type='customize'";
 $res = mysqli_query($conn, $q);
 
 ?>
@@ -23,9 +23,7 @@ $res = mysqli_query($conn, $q);
     <div class="col-lg-12 col-md-12">
         <div class="row pb-3">
             <!-- Button for creating a post -->
-            <div class="col-lg-12 d-flex justify-content-center">
-                <a href="create-customize-product.php" class="btn btn-primary mb-5">Create Customized Product</a>
-            </div>
+            
 
             <!-- Loop through each post and create a card -->
             <?php
@@ -33,42 +31,43 @@ $res = mysqli_query($conn, $q);
             echo "<script>alert('Login Please');window.location='login.php';</script>";
         }else
         {
-        while ($row = mysqli_fetch_assoc($res)) {
+        while ($products = mysqli_fetch_assoc($res)) {
         ?>
             <div class="row px-xl-5 pb-3">
-                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div class="card"
-                        style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; ">
-                        <div class="card-header">
-                            <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
+            <div class="col-lg-3 col-md-12 col-sm-12 pb-1 mb-3">
+                <div>
+                <div class="card product-item border-0 mb-0" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                        <div
+                            class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <a href="product-detail.php?id=<?php echo $products['product_id']; ?>">
+                                <img style="width:400px; height:230px;" class="img-fluid"
+                                    src="./user/<?php echo $products['image']; ?> " alt="">
+                            </a>
                         </div>
-                        <div class="card-image">
-                            <img class="img-fluid hover:opacity-75" src="./<?php echo($row['image']); ?>"
-                                alt="Card image cap">
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 style="text-transform:uppercase;" class="text-truncate mb-1">
+                                <?php echo $products['name']; ?>
+                            </h6>
+                            <div class="d-flex justify-content-center">
+                                <h6 styel="text-align:left;">₹
+                                    <?php echo $products['price']; ?>
+                                </h6>
+                            </div>
                         </div>
-
-                        <div class="card-text">
-                            <p class="card-meal">Description:<?php echo $row['description']; ?></p>
-                            <p class="card-body">Steps To Create Product:</p>
-                            <ul>
-                                <?php echo $row['steps']; ?>
-                            </ul>
-                        </div>
-                        <div class="card-price">₹<?php echo $row['price']; ?></div>
-
-                        <div class="card-footer d-flex justify-content-between bg-light border mt-2">
-                            <a href="wish-add.php?product_id=<?php echo $row['id']; ?>"><i
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="wish-add.php?product_id=<?php echo $products['product_id']; ?>"><i
                                     class="fas fa-heart text-primary"></i>Add Wish</a>
                             <form action="cart-add.php">
-                                <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
+                                <input type="hidden" name="product_id" value="<?php echo $products['product_id']; ?>">
                                 <input type="hidden" name="qty" value="1" min=1>
                                 <i class="fas fa-shopping-cart text-primary mr-1"></i>
                                 <input class="btn btn-sm text-dark p-0" type="submit" value="Add To Cart">
                             </form>
                         </div>
                     </div>
-
                 </div>
+
+            </div>
             </div>
             <?php } 
         }

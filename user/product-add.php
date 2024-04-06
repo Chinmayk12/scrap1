@@ -16,7 +16,7 @@ $user_id = $data['user_id'];
                         <h4 class="mb-0"><b>Add Product</b></h4>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
@@ -38,22 +38,23 @@ $user_id = $data['user_id'];
                                             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
                                             <div class="form-group col-md-12">
                                                 <label for="inputEmail4">Product Name</label>
-                                                <input type="text" name="name" class="form-control rounded" id="inputEmail4" placeholder="Product name">
+                                                <input type="text" name="name" class="form-control rounded"
+                                                    id="inputEmail4" placeholder="Product name">
                                             </div>
                                             <div class="form-group col-md-12">
-                                                        <label for="inputEmail4">Category Type</label>
-                                                        <select name="type" class="form-control rounded">
-                                                        <option >--Category Type--</option>
-                                                            <option value="scrap">Scrap</option>
-                                                            <option value="creative">Creative</option>
-                                                            
-                                                        </select>
-                                                    </div>
+                                                <label for="inputEmail4">Category Type</label>
+                                                <select name="type" class="form-control rounded">
+                                                    <option>--Category Type--</option>
+                                                    <option value="scrap">Scrap</option>
+                                                    <option value="creative">Creative</option>
+                                                    <option value="customize">Customize</option>
+                                                </select>
+                                            </div>
                                             <div class="form-group col-md-12">
                                                 <label for="inputPassword4">Product Category</label>
 
-                                                <select name="category" class="form-control rounded" id="inputEmail4"  >
-                                                    
+                                                <select name="category" class="form-control rounded" id="inputEmail4">
+
                                                     <option>--Select Category--</option>
 
                                                     <?php
@@ -69,17 +70,20 @@ $user_id = $data['user_id'];
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label for="inputPassword4">Product Price</label>
-                                                <input type="text" name="price" class="form-control" id="inputPassword4" placeholder="Enter price">
+                                                <input type="text" name="price" class="form-control" id="inputPassword4"
+                                                    placeholder="Enter price">
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label for="inputEmail4">Product Image</label>
-                                                <input type="file" name="image" class="form-control rounded" id="inputEmail4" placeholder="upload image">
+                                                <input type="file" name="image" class="form-control rounded"
+                                                    id="inputEmail4" placeholder="upload image">
                                             </div>
-                                          
-                                            
+
+
                                             <div class="form-group col-md-12">
                                                 <label for="inputPassword4">Product Detail</label>
-                                                <input type="text" name="detail" class="form-control" id="inputPassword4" placeholder="Write product detail">
+                                                <input type="text" name="detail" class="form-control"
+                                                    id="inputPassword4" placeholder="Write product detail">
                                             </div>
                                         </div>
 

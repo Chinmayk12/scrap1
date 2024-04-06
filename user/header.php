@@ -43,9 +43,17 @@
 <body id="main-container" class="default">
 
     <!-- START: Pre Loader-->
-    <div class="se-pre-con">
+    <div id="loader" class="se-pre-con">
         <div class="loader"></div>
     </div>
+
+    <script>
+    // Wait for 2 seconds and then hide the loader
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+    }, 1000); // 2000 milliseconds = 2 seconds
+    </script>
+
     <!-- END: Pre Loader-->
 
     <!-- START: Header-->
@@ -58,20 +66,6 @@
                     </a>
                 </div>
 
-
-                <!-- <form class="float-left d-none d-lg-block search-form">
-                    <div class="form-group mb-0 position-relative">
-                        <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Search anything...">
-                        <div class="btn-search position-absolute top-0">
-                            <a href="#"><i class="h6 icon-magnifier"></i></a>
-                        </div>
-                        <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>
-                        </a>
-
-                    </div>
-
-                </form>-->
-
                 <div class="navbar-right ml-auto h-100">
 
                     <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
@@ -80,56 +74,7 @@
                                 <button type="button" class="btn btn-warning">Back To Home</button>
                             </a>
                         </li>
-                        <!--
-                        <li class="d-inline-block align-self-center  d-block d-lg-none">
-                            <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i class="icon-magnifier h4"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown align-self-center d-inline-block">
-                            <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-bell h4"></i>
-                                <span class="badge badge-default"> <span class="ring">
-                                    </span><span class="ring-point">
-                                    </span> </span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-right border   py-0">
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
-                                        <div class="media">
-                                            
-                                            <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle w-50">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-success">john send a message</p>
-                                                12 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-danger">Peter send a message</p>
-                                                15 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
-                                        <div class="media">
-                                            <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
-                                            <div class="media-body">
-                                                <p class="mb-0 text-warning">Bill send a message</p>
-                                                5 min ago
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
 
-                                <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i class="icon-arrow-right pl-2 small"></i></a></li>
-                            </ul>
-                        </li> -->
                         <li class="dropdown user-profile align-self-center d-inline-block">
                             <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false">
                                 <div class="media">
@@ -139,11 +84,6 @@
                             </a>
 
                             <div class="dropdown-menu border dropdown-menu-right p-0">
-                                <!--  <a href="#" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-pencil mr-2 h6 mb-0"></span> Edit Profile</a>
-                                <a href="#" class="dropdown-item px-2 align-self-center d-flex">
-                                    <span class="icon-user mr-2 h6 mb-0"></span> View Profile</a>-->
-
                                 <div class="dropdown-divider"></div>
                                 <a href="logout.php" class="dropdown-item px-2 text-danger align-self-center d-flex">
                                     <span class="icon-logout mr-2 h6  mb-0"></span> Sign Out</a>
@@ -167,26 +107,6 @@
                         <li class="active"><a href="index.php"><i class="icon-layers"></i>Dashboard</a></li>
                         <li><a href="products.php"><i class="icon-layers"></i>My Products</a></li>
                         <li><a href="my-order.php"><i class="icon-layers"></i>My Orders</a></li>
-                        <!--<li class="dropdown"><a href="#"><i class="icon-layers"></i>My Orders</a>
-                            <ul class="sub-menu">
-                               <?php
-                                
-                                include 'db.php';
-                                $q = "select * from product_cat";
-                                $res = mysqli_query($conn, $q);
-                                while($data = mysqli_fetch_array($res)) {
-                                ?>*/
-                                    
-                                    <li style="text-transform:capitalize;"><a href="my-order.php?id=<?php echo $data['cat_id'];?>" class="dropdown-item"><?php echo $data['cat_name']; ?></a></li>
-                                
-                                <?php
-                                }
-                                ?>
-                            </ul>
-                        </li>
-                        -->
-                        <!--    <li><a href="#"><i class="icon-layers"></i>  Payment</a></li>-->
-
                     </ul>
 
                 </li>
