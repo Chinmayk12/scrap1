@@ -7,13 +7,14 @@ include 'db.php'; // Include your database connection script
     $description= $_POST['description'];
     $steps = $_POST['steps'];
     $user_id=$_POST['user_id'];
+    $price = $_POST['price'];
     
     $tmp=$_FILES['image']['tmp_name'];
     $image="./add-img/".$_FILES['image']['name'];
     move_uploaded_file($tmp,$image);
     
     // Insert data into database
-    $q = "INSERT INTO `creative_product` (`id`, `uid`, `name`, `description`, `steps`, `image`) VALUES (NULL, '$user_id', '$name', '$description', '$steps', '$image')";
+    $q = "INSERT INTO `creative_product` (`id`, `uid`, `name`,`price`, `description`, `steps`, `image`) VALUES (NULL, '$user_id', '$name','$price', '$description', '$steps', '$image')";
     $res = mysqli_query($conn, $q);
 
     if ($res) {

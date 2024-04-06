@@ -50,12 +50,16 @@ $res = mysqli_query($conn, $q);
 
     </div>
 </div>
+<<<<<<< HEAD
 </div>
 <script>
 function myFunction(x) {
     x.classList.toggle("fa-thumbs-down");
 }
 </script>
+=======
+
+>>>>>>> b3cb6499ea5ab012a4b645e096ca51fd2af3573b
 <?php
 include 'footer.php';
 ?>

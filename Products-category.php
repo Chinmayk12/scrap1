@@ -62,7 +62,7 @@ include 'header.php';
             if(!in_array($products['product_id'], $addedProductIds)) {
         ?>
         <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
-            <div class="card product-item border-0 mb-0">
+            <div class="card product-item border-0 mb-0" >
                 <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
                     <a href="product-detail.php?id=<?php echo $products['product_id'];?>" >
                         <img style="width:300px; height:230px;" class="img-fluid" src="./user/<?php echo $products['image'];?> "   alt=""  >

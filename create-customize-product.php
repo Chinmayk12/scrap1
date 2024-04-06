@@ -47,6 +47,13 @@ if (isset($_SESSION['user'])) {
 
                         <div class="col-md-4">
                             <div class="form-group">
+                                <label for="payment_details">Price</label>
+                                <textarea class="form-control" id="price" name="price"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
                                 <label for="image">Upload Image</label>
                                 <input type="file" class="form-control-file" id="image" name="image">
                             </div>
