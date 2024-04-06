@@ -9,13 +9,13 @@ $res = mysqli_query($conn, $q);
 ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Page Header Start -->
-<div class="container-fluid bg-secondary mb-3">
-    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Posts</h1>
+<div class="container-fluid bg-secondary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100px">
+        <h1 class="font-weight-semi-bold text-uppercase mb-3"><b>Order Detail</b></h1>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.php">Home</a></p>
             <p class="m-0 px-2">-</p>
-            <p class="m-0">Posts</p>
+            <p class="m-0">Shop</p>
         </div>
     </div>
 </div>
@@ -50,7 +50,7 @@ $res = mysqli_query($conn, $q);
 
     </div>
 </div>
-</div>
+
 <script>
 function myFunction(x) {
     x.classList.toggle("fa-thumbs-down");
