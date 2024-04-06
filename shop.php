@@ -2,6 +2,7 @@
 include 'header.php';
 ?>
 
+<body style="background-color: #f3f3f9;">
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
@@ -81,7 +82,7 @@ include 'header.php';
         ?>
     </div>
 </div>
-
+<body y>
 
 <?php
 include 'footer.php';

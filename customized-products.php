@@ -8,60 +8,61 @@ $res = mysqli_query($conn, $q);
 
 ?>
 
-<!-- Page Header Start -->
-<div class="container-fluid bg-secondary mb-3">
-    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Customized Products</h1>
-        <div class="d-inline-flex">
-            <p class="m-0"><a href="index.php">Home</a></p>
-            <p class="m-0 px-2">-</p>
-            <p class="m-0">Customized Products</p>
+<body style="background-color: #f3f3f9;">
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mt-3 mb-3">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height:100px;">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Customized Products</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="index.php">Home</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Customized Products</p>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-lg-12 col-md-12">
-    <div class="row pb-3">
-        <!-- Button for creating a post -->
-        <div class="col-lg-12 d-flex justify-content-center">
-            <a href="create-customize-product.php" class="btn btn-primary mb-5" >Create Customized Product</a>
-        </div>
+    <div class="col-lg-12 col-md-12">
+        <div class="row pb-3">
+            <!-- Button for creating a post -->
+            <div class="col-lg-12 d-flex justify-content-center">
+                <a href="create-customize-product.php" class="btn btn-primary mb-5">Create Customized Product</a>
+            </div>
 
-        <!-- Loop through each post and create a card -->
-        <?php
+            <!-- Loop through each post and create a card -->
+            <?php
         if (!isset($_SESSION['user'])) {
             echo "<script>alert('Login Please');window.location='login.php';</script>";
         }else
         {
         while ($row = mysqli_fetch_assoc($res)) {
         ?>
-        <div class="row px-xl-5 pb-3">
-            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="card"
-                    style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; ">
-                    <div class="card-header">
-                        <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
+            <div class="row px-xl-5 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card"
+                        style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; padding: 15px; ">
+                        <div class="card-header">
+                            <h5 class="card-title">Name:<?php echo $row['name']; ?></h5>
+                        </div>
+                        <div class="card-image">
+                            <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
+                        </div>
+                        <div class="card-text">
+                            <p class="card-meal">Description:<?php echo $row['description']; ?></p>
+                            <p class="card-body">Steps To Create Product:</p>
+                            <ul>
+                                <?php echo $row['steps']; ?>
+                            </ul>
+                        </div>
+                        <div class="card-price">₹<?php echo $row['price']; ?></div>
                     </div>
-                    <div class="card-image">
-                        <img class="img-fluid" src="./<?php echo($row['image']); ?>" alt="Card image cap">
-                    </div>
-                    <div class="card-text">
-                        <p class="card-meal">Description:<?php echo $row['description']; ?></p>
-                        <p class="card-body">Steps To Create Product:</p>
-                        <ul>
-                            <?php echo $row['steps']; ?>
-                        </ul>
-                    </div>
-                    <div class="card-price">₹<?php echo $row['price']; ?></div>
                 </div>
             </div>
-        </div>
-        <?php } 
+            <?php } 
         }
         ?>
 
+        </div>
     </div>
-</div>
-
+</body>
 <?php
 include 'footer.php';
 ?>

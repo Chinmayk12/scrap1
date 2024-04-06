@@ -205,7 +205,7 @@
             }
 </style>
 <br>
-<hr style="background-color: black; weight: 5px;">
+
 <footer class="new_footer_area bg_color">
             <div class="new_footer_top">
                 <div class="container">

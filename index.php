@@ -2,6 +2,7 @@
  $hide_menu=true;
 include 'header.php';
 ?>
+
 <body style="background-color: #f3f3f9;">
     <div id="header-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -110,17 +111,19 @@ include 'header.php';
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="card product-item border-0 mb-4"
                     style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
-                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img style="width:300px; height:300px;" class="img-fluid w-100"
-                            src="./user/<?php echo $products['image']; ?>" alt="">
-                    </div>
-                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <center><h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6><center>
-                        <div class="d-flex justify-content-center">
-                            <h6>₹ <?php echo $products['price']; ?></h6>
+                    <a href="product-detail.php?id=<?php echo $products['product_id']; ?>" class="card-link">
+                        <div
+                            class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img style="width:300px; height:300px;" class="img-fluid w-100"
+                                src="./user/<?php echo $products['image']; ?>" alt="">
                         </div>
-                    </div>
-
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>₹ <?php echo $products['price']; ?></h6>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <?php
@@ -130,14 +133,18 @@ include 'header.php';
         <!-- <div class="text-center mb-4">
             <h2 style="font-weight: 50px;"><b>Scrap Products</b></h2>
         </div> -->
-         <div class="container12">
-          <div class="row">
-            <div class="col-md-12 text-center12">
-               <center><h3 class="animate-charcter"><b style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;"> &nbsp;&nbsp;Scrap Products &nbsp;</b></h3></center><br>
+        <div class="container12">
+            <div class="row">
+                <div class="col-md-12 text-center12">
+                    <center>
+                        <h3 class="animate-charcter"><b
+                                style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                                &nbsp;&nbsp;Scrap Products &nbsp;</b></h3>
+                    </center><br>
+                </div>
             </div>
-        </div>
-        <div class="row px-xl-5 pb-3">
-            <?php
+            <div class="row px-xl-5 pb-3">
+                <?php
                  $q="select * from products where type='scrap' limit 4";
                
                    
@@ -146,28 +153,30 @@ include 'header.php';
                     {
             ?>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="card product-item border-0 mb-4"
-                    style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
-                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <img style="width:300px; height:300px;" class="img-fluid w-100"
-                            src="./user/<?php echo $products['image']; ?>" alt="">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card product-item border-0 mb-4"
+                        style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                        <a href="product-detail.php?id=<?php echo $products['product_id']; ?>" class="card-link">
+                            <div
+                                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img style="width:300px; height:300px;" class="img-fluid w-100"
+                                    src="./user/<?php echo $products['image']; ?>" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>₹ <?php echo $products['price']; ?></h6>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <center><h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6><center>
-                        <div class="d-flex justify-content-center">
-                            <h6>₹ <?php echo $products['price']; ?></h6>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-            <?php
+                <?php
                     }
             ?>
+            </div>
         </div>
-    </div>
-    <!-- Products End -->
+        <!-- Products End -->
 </body>
 
 <?php
