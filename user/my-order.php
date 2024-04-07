@@ -25,7 +25,6 @@ include 'header.php';
         <div class="row">
             <div class="col-12 col-sm-12 mt-3">
                 <div class="card">
-
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table layout-primary bordered">
@@ -76,7 +75,6 @@ include 'header.php';
                     </div>
                 </div>
             </div>
-
         </div>
         <?php
 

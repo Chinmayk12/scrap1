@@ -28,7 +28,6 @@ $user_id = $data['user_id'];
         <div class="row">
             <div class="col-12 col-sm-12 mt-3"> 
                 <div class="card">
-
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table layout-primary bordered">
@@ -85,15 +84,8 @@ $user_id = $data['user_id'];
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-
-    </div>
-    </div>
-    <!-- END: Card DATA-->
-    </div>
+    
 </main>
 <!-- END: Content-->
 

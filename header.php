@@ -63,7 +63,7 @@ if (isset($_SESSION['user'])) {
             ?>
 
             <a href="login-valid.php">
-                <button type="button" class="btn btn-warning rounded-btn">+ Sell Product</button>
+                <button type="button" class="btn btn-warning rounded-btn">User Profile</button>
 
             </a>
 

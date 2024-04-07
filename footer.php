@@ -228,10 +228,10 @@
                                 <ul class="list-unstyled f_list">
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="products-category.php?type=creative">Creatives</a></li>
-                                    <li><a href="#">Scraps</a></li>
-                                    <li><a href="#">Community</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">Customized Products</a></li>
+                                    <li><a href="products-category.php?type=scrap">Scraps</a></li>
+                                    <li><a href="post.php">Community</a></li>
+                                    <li><a href="shop.php">Shop</a></li>
+                                    <li><a href="customized-products.php">Customized Products</a></li>
                                 </ul>
                             </div>
                         </div>

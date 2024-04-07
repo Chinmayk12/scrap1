@@ -83,11 +83,11 @@ include 'header.php';
                 </h4>
 
                 <div>
-                    <button class="btn btn-link" onclick="toggleComments(this)">Comments</button>
+                    <button class="btn btn-link" onclick="toggleComments(this)">Click here to view Comments</button>
                     <div class="comments-section" style="display: none;">
                         <!-- Comment form -->
                             <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
-                            <h4 name="comments"><?php echo $data['comments']; ?></h4>
+                            <h4 name="comments"><?php echo $data['comments']; ?></h4><br>
                     </div>
                 </div>
 
@@ -111,9 +111,9 @@ include 'header.php';
                     while ($product_data = mysqli_fetch_array($res2)) {
                         ?>
 
-                                            <div class="card product-item border-0">
+                                            <div class="card product-item border-0" >
                                                 <div
-                                                    class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                                    class="card-header product-img position-relative overflow-hidden bg-transparent border p-0" >
                                                     <a href="post-detail.php?id=<?php echo $product_data['id']; ?>">
                                                         <img style="width:300px; height:230px;" class="img-fluid w-100"
                                                             src="<?php echo $product_data['image']; ?>" alt="">
