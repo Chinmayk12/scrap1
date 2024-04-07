@@ -16,7 +16,7 @@ The underlying project helps user to view and buy trending artefacts of all the 
 # Project Setup:
 a)Download Xampp:
 [Download XAMPP Server](https://www.apachefriends.org/)
-
+b)Clone the repository of github and paste it into the xampp location and paste it into (htdocs folder) E.g. C:\xampp\htdocs\scrap1
 
  
 
