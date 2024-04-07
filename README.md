@@ -16,11 +16,11 @@ The underlying project helps user to view and buy trending artefacts of all the 
 # Project Setup:
 a)Download Xampp:
 [Download XAMPP Server](https://www.apachefriends.org/)
-<br>
+<br><br>
 b)Clone the repository of github in VS Code and select the location as the xampp (htdocs folder) E.g. C:\xampp\htdocs\scrap1
-<br>
+<br><br>
 c) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
-<br>
+<br><br>
 
 
  
