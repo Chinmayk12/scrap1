@@ -23,6 +23,7 @@ d)Open the Xampp Server and start  (Apache and MySQL) Server
 <br><br>
 ![image](https://github.com/Chinmayk12/scrap1/assets/137162238/40c61d0f-ed86-45a1-8f72-9bc9c9fa9c6b)
 <br><br>
+d)
 c) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
