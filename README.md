@@ -2,7 +2,6 @@
 India grapples with inefficient waste management and insufficient support for local artisans. With 3.4 million tons of annual waste, only 30 percent is recycled, worsening environmental degradation.Simultaneously, artisans face barriers to growth due to limited support and networking, incurring high expenses.
 		
 
-
 # Solution : Scrap-Swap
 Using online shopping platforms, customers can purchase any merchandise anywhere and anytime without the need to physically go from store to store to find a product or wait in lines to check out.
 
@@ -14,16 +13,34 @@ There are many peoples in India who implements the concept of “Best from Waste
 
 The underlying project helps user to view and buy trending artefacts of all the types. The user can add products in Wishlist, cart and then can order them as per their convenience. After ordering the product user can keep track of order.
 
-# Technologies Used:
-  1) Frontend:
-     a) HTML
-     b) CSS
-     c) Javascript
-     d) Bootstrap
-		
-  2) Backend:
-     a) PHP
-     b) MySQL
+# Project Setup:
+a)Download Xampp:
+[Download XAMPP Server](https://www.apachefriends.org/)
+<br><br>
+b)Clone the repository of github in VS Code and select the location as the xampp foler (htdocs folder) E.g. C:\xampp\htdocs\scrap1
+<br><br>
+d)Open the Xampp Server and start  (Apache and MySQL) Server 
+<br><br>
+![image](https://github.com/Chinmayk12/scrap1/assets/137162238/4310e76f-351b-4975-977d-d410bc31a3c4)
+<br><br>
+e) Open MySQL Admin Panel it will redirect to databse
+<br><br>
+![Click on New Button (1) (2)](https://github.com/Chinmayk12/scrap1/assets/137162238/7926806e-d0c2-4bbd-9ec7-d8f48113c304)
+<br><br>
+f)Click on (new) and then enter database name as ("scrap1") and import the Database File: 
+[Download SQL file](https://t.ly/5d7yz)
+<br><br>
+d) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
+<br><br>
+
+# Login Credential:
+a) Username : 0123456789
+<br><br>
+b) Password : 12345
+<br><br>
+
+# Presentation PPT:
+[Scrap Swap.pdf](https://github.com/Chinmayk12/scrap1/files/14895667/Scrap.Swap.pdf)
 
 # Project Snapshot:
 ![e7cbe3b2-484a-4b3c-8bd4-96c9b7d9ec17](https://github.com/Chinmayk12/scrap1/assets/137162238/404793fe-9077-40b6-aa88-3f11d3c4cf36)
