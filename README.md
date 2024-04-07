@@ -30,7 +30,7 @@ The underlying project helps user to view and buy trending artefacts of all the 
 ![f8b7cf49-4d21-439d-af9e-9aaf4b4bb416](https://github.com/Chinmayk12/scrap1/assets/137162238/a73d5241-70f3-467f-9ab9-46e50abf3903)
 ![80d32d8a-1728-442f-99d9-ca455c125c47](https://github.com/Chinmayk12/scrap1/assets/137162238/737138d3-f9e6-4b53-9044-e637ff691094)
 ![cf9a5b4b-5fd7-4a75-9ef4-1074d94aa415](https://github.com/Chinmayk12/scrap1/assets/137162238/6950a708-ccc7-4433-b38b-9d5bae9ecd77)
-![c362b7bf-bc9d-445f-a257-055dbb8d4976](https://github.com/Chinma![f59dd8b5-21cb-4322-9e50-28d6acbf505d](https://github.com/Chinmayk12/scrap1/assets/137162238/7a6dc1c2-2c68-48bd-8896-d3dde42541a0)
+![c362b7bf-bc9d-445f-a257-055dbb8d4976](https://github.com/Chinmayk12/scrap1/assets/137162238/64522398-143d-4968-8687-ddef4c29ceeb)
 yk12/scrap1/assets/137162238/579022e7-2629-4bb4-bc32-927bc6ae6eb3)
 ![298fc31c-11ad-4c06-bc7b-75c6415fa162](https://github.com/Chinmayk12/scrap1/assets/137162238/81ab700c-ddad-4348-8780-7669cf348d42)
 ![4000c8e6-174f-48cf-8284-cf119a8206bd](https://github.com/Chinmayk12/scrap1/assets/137162238/97cfe5b4-e07d-4706-b933-11d4ba36436f)
