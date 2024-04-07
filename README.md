@@ -19,6 +19,9 @@ a)Download Xampp:
 <br><br>
 b)Clone the repository of github in VS Code and select the location as the xampp foler (htdocs folder) E.g. C:\xampp\htdocs\scrap1
 <br><br>
+d)Open the Xampp Server and start  (Apache and MySQL) Server 
+![image](https://github.com/Chinmayk12/scrap1/assets/137162238/40c61d0f-ed86-45a1-8f72-9bc9c9fa9c6b)
+<br><br>
 c) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
