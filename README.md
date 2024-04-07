@@ -22,10 +22,10 @@ b)Clone the repository of github in VS Code and select the location as the xampp
 d)Open the Xampp Server and start  (Apache and MySQL) Server 
 <br><br>
 ![image](https://github.com/Chinmayk12/scrap1/assets/137162238/4310e76f-351b-4975-977d-d410bc31a3c4)
-
 <br><br>
-d)
-c) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
+e) Open MySQL Admin Panel it will redirect to databse
+<br><br>
+d) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
 # Login Credential:
