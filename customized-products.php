@@ -36,7 +36,7 @@ $res = mysqli_query($conn, $q);
             <div class="row pr-3 pb-3">
                 <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
                     <div>
-                        <div class="card product-item border-0 mb-2"
+                        <div class="card product-item border-0 mb-4"
                             style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
                             <div
                                 class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
