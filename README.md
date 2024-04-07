@@ -1,4 +1,9 @@
-# Creative-Scrapyard
+# Problem Statement:
+India grapples with inefficient waste management and insufficient support for local artisans. With 3.4 million tons of annual waste, only 30 percent is recycled, worsening environmental degradation.Simultaneously, artisans face barriers to growth due to limited support and networking, incurring high expenses.
+		
+
+
+# Solution : Scrap-Swap
 Using online shopping platforms, customers can purchase any merchandise anywhere and anytime without the need to physically go from store to store to find a product or wait in lines to check out.
 
 Despite their advantages in comparison with instore shopping, customers often have concerns when they shop for products that require measurements, Various Configurations estimation such as Electrical Devices, Spare Parts, Components of Computer etc. As everybody cannot afford the expensive gadgets or commodity, so here on our platform they can buy various types of gadgets on cheap price with verified product.
