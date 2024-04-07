@@ -59,9 +59,9 @@ include 'header.php';
                             </a>
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 style="text-transform:uppercase;" class="text-truncate mb-1">
+                            <center><h6 style="text-transform:uppercase;" class="text-truncate mb-1">
                                 <?php echo $products['name']; ?>
-                            </h6>
+                            </h6></center>
                             <div class="d-flex justify-content-center">
                                 <h6 styel="text-align:left;">₹
                                     <?php echo $products['price']; ?>

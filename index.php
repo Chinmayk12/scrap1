@@ -109,7 +109,7 @@ include 'header.php';
                                 src="./user/<?php echo $products['image']; ?>" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                           <center> <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6></center>
                             <div class="d-flex justify-content-center">
                                 <h6>₹ <?php echo $products['price']; ?></h6>
                             </div>
@@ -154,7 +154,7 @@ include 'header.php';
                                     src="./user/<?php echo $products['image']; ?>" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6>
+                                <center><h6 class="text-truncate mb-3"><?php echo $products['name']; ?></h6></center>
                                 <div class="d-flex justify-content-center">
                                     <h6>₹ <?php echo $products['price']; ?></h6>
                                 </div>
