@@ -34,7 +34,7 @@ $res = mysqli_query($conn, $q);
         
         while ($products = mysqli_fetch_assoc($res)) {
         ?>
-            <div class="row pr-5 pb-3">
+            <div class="row pr-3 pb-3">
                 <div class="col-lg-3 col-md-12 col-sm-12 pb-1">
                     <div>
                         <div class="card product-item border-0 mb-2"
