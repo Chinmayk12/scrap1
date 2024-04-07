@@ -28,7 +28,9 @@ e) Open MySQL Admin Panel it will redirect to databse
 ![Click on New Button (1) (2)](https://github.com/Chinmayk12/scrap1/assets/137162238/7926806e-d0c2-4bbd-9ec7-d8f48113c304)
 <br><br>
 f)Click on (new) and then enter database name as (scrap1) and import the Database File: 
+[Download SQL file](https://t.ly/5d7yz)
 <br><br>
+
 d) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
