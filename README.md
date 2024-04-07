@@ -14,7 +14,8 @@ There are many peoples in India who implements the concept of “Best from Waste
 The underlying project helps user to view and buy trending artefacts of all the types. The user can add products in Wishlist, cart and then can order them as per their convenience. After ordering the product user can keep track of order.
 
 # Project Setup:
-	a)  Download XAMPP Server
+	[Download XAMPP Server](https://www.apachefriends.org/)
+
 
  
 
