@@ -25,7 +25,7 @@ d)Open the Xampp Server and start  (Apache and MySQL) Server
 <br><br>
 e) Open MySQL Admin Panel it will redirect to databse
 <br><br>
-![image](https://github.com/Chinmayk12/scrap1/assets/137162238/6e1bd900-56f5-4349-8d75-04052b74221d)
+![Click on New Button (1) (2)](https://github.com/Chinmayk12/scrap1/assets/137162238/7926806e-d0c2-4bbd-9ec7-d8f48113c304)
 <br><br>
 d) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
