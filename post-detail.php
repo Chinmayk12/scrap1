@@ -82,94 +82,107 @@ include 'header.php';
                     <?php echo $data['message']; ?>
                 </h4>
 
+                <div>
+                    <button class="btn btn-link" onclick="toggleComments(this)">Comments</button>
+                    <div class="comments-section" style="display: none;">
+                        <!-- Comment form -->
+                            <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
+                            <h4 name="comments"><?php echo $data['comments']; ?></h4>
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
         <!-- Products Start -->
-        <div class="container-fluid py-5">
-            <div class="text-center mb-4">
-                <h2 class="section-title px-5"><span class="px-2">You May Also Like</span></h2>
-            </div>
-            <div class="row px-xl-5">
-                <div class="col">
-                    <div class="owl-carousel related-carousel">
+        <div class=" container-fluid py-5">
+                                <div class="text-center mb-4">
+                                    <h2 class="section-title px-5"><span class="px-2">You May Also Like</span></h2>
+                                </div>
+                                <div class="row px-xl-5">
+                                    <div class="col">
+                                        <div class="owl-carousel related-carousel">
 
-                        <?php
+                                            <?php
                     //print_r($data);
                     $q2 = "select * from post";
                     $res2 = mysqli_query($conn, $q2);
                     while ($product_data = mysqli_fetch_array($res2)) {
                         ?>
 
-                        <div class="card product-item border-0">
-                            <div
-                                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                <a href="post-detail.php?id=<?php echo $product_data['id']; ?>">
-                                    <img style="width:300px; height:230px;" class="img-fluid w-100"
-                                        src="<?php echo $product_data['image']; ?>" alt="">
-                                </a>
-                            </div>
-                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">
-                                    <?php echo $product_data['name']; ?>
-                                </h6>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between bg-light border">
-                                <!-- Like button with onclick event -->
-                                <a href="#" onclick="likePost(<?php echo $row['id']; ?>, this)">
-                                    <i class="fa fa-thumbs-up"></i> Like
-                                </a>
-                                <!-- Comment section -->
-                                <div>
-                                    <button class="btn btn-link" onclick="toggleComments(this)">Comments</button>
-                                    <div class="comments-section" style="display: none;">
-                                        <!-- Comment form -->
-                                        <form action="add-comments.php" method="post">
-                                            <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
-                                            <textarea class="form-control" name="comment"
-                                                placeholder="Write a comment..."></textarea>
-                                            <button type="submit" class="btn btn-primary mt-1">Post</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                            <div class="card product-item border-0">
+                                                <div
+                                                    class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                                    <a href="post-detail.php?id=<?php echo $product_data['id']; ?>">
+                                                        <img style="width:300px; height:230px;" class="img-fluid w-100"
+                                                            src="<?php echo $product_data['image']; ?>" alt="">
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                                    <h6 class="text-truncate mb-3">
+                                                        <?php echo $product_data['name']; ?>
+                                                    </h6>
+                                                </div>
+                                                <div class="card-footer d-flex justify-content-between bg-light border">
+                                                    <!-- Like button with onclick event -->
+                                                    <a href="#" onclick="likePost(<?php echo $row['id']; ?>, this)">
+                                                        <i class="fa fa-thumbs-up"></i> Like
+                                                    </a>
+                                                    <!-- Comment section -->
+                                                    <div>
+                                                        <button class="btn btn-link"
+                                                            onclick="toggleComments(this)">Comments</button>
+                                                        <div class="comments-section" style="display: none;">
+                                                            <!-- Comment form -->
+                                                            <form action="add-comments.php" method="post">
+                                                                <input type="hidden" name="product_id"
+                                                                    value="<?php echo $row['id']; ?>">
+                                                                <textarea class="form-control" name="comment"
+                                                                    placeholder="Write a comment..."></textarea>
+                                                                <button type="submit"
+                                                                    class="btn btn-primary mt-1">Post</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                        <?php
+                                            <?php
                     }
                     ?>
 
+                                        </div>
+                                    </div>
+                                </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <script>
-    function validateLogin() {
-        // Check if the user is logged in
-        if (!<?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>) {
-            // If not logged in, show alert and return the login page URL
-            alert('Please login to create a post.');
-            return 'login.php'; // Redirect to the login page
-        }
-        // If logged in, return the create post page URL
-        return 'create-post.php';
-    }
+                <script>
+                function validateLogin() {
+                    // Check if the user is logged in
+                    if (!<?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>) {
+                        // If not logged in, show alert and return the login page URL
+                        alert('Please login to create a post.');
+                        return 'login.php'; // Redirect to the login page
+                    }
+                    // If logged in, return the create post page URL
+                    return 'create-post.php';
+                }
 
-    function likePost(postId, element) {
-        // Here you can implement the logic to handle liking a post
-        // For now, let's just toggle the 'fa-thumbs-up' class
-        element.classList.toggle("fa-thumbs-down");
-    }
+                function likePost(postId, element) {
+                    // Here you can implement the logic to handle liking a post
+                    // For now, let's just toggle the 'fa-thumbs-up' class
+                    element.classList.toggle("fa-thumbs-down");
+                }
 
-    function toggleComments(button) {
-        // Toggle the display of the comments section
-        let commentsSection = button.nextElementSibling;
-        commentsSection.style.display = commentsSection.style.display === 'none' ? 'block' : 'none';
-    }
-    </script>
-    <?php
+                function toggleComments(button) {
+                    // Toggle the display of the comments section
+                    let commentsSection = button.nextElementSibling;
+                    commentsSection.style.display = commentsSection.style.display === 'none' ? 'block' : 'none';
+                }
+                </script>
+                <?php
 
     include 'footer.php';
 
