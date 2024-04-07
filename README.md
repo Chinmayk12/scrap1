@@ -26,8 +26,7 @@ c) Try to run project in chrome by giving the command prompt : http://localhost/
 a) Username : 8010944027
 <br><br>
 b) Password : 123
-
- 
+<br><nr>
 
 # Technologies Used:
   1) Frontend:
