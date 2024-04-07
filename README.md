@@ -22,6 +22,10 @@ b)Clone the repository of github in VS Code and select the location as the xampp
 c) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
+# Login Credential:
+a) Username : 8010944027
+<br><br>
+b) Password : 123
 
  
 
