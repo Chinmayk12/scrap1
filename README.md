@@ -27,10 +27,9 @@ e) Open MySQL Admin Panel it will redirect to databse
 <br><br>
 ![Click on New Button (1) (2)](https://github.com/Chinmayk12/scrap1/assets/137162238/7926806e-d0c2-4bbd-9ec7-d8f48113c304)
 <br><br>
-f)Click on (new) and then enter database name as (scrap1) and import the Database File: 
+f)Click on (new) and then enter database name as ("scrap1") and import the Database File: 
 [Download SQL file](https://t.ly/5d7yz)
 <br><br>
-
 d) Try to run project in chrome by giving the command prompt : http://localhost/scrap1/
 <br><br>
 
@@ -42,7 +41,6 @@ b) Password : 12345
 
 # Presentation PPT:
 [Scrap Swap.pdf](https://github.com/Chinmayk12/scrap1/files/14895667/Scrap.Swap.pdf)
-
 
 # Project Snapshot:
 ![e7cbe3b2-484a-4b3c-8bd4-96c9b7d9ec17](https://github.com/Chinmayk12/scrap1/assets/137162238/404793fe-9077-40b6-aa88-3f11d3c4cf36)
