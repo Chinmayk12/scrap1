@@ -38,6 +38,9 @@ a) Username : 0123456789
 b) Password : 12345
 <br><nr>
 
+# Presentation PPT:
+
+
 # Project Snapshot:
 ![e7cbe3b2-484a-4b3c-8bd4-96c9b7d9ec17](https://github.com/Chinmayk12/scrap1/assets/137162238/404793fe-9077-40b6-aa88-3f11d3c4cf36)
 ![f76f5f2c-7127-4158-80e2-178107bad528](https://github.com/Chinmayk12/scrap1/assets/137162238/190abb6c-c99c-42d0-adaa-821d88083f4c)
