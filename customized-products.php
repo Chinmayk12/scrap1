@@ -13,8 +13,7 @@ $res = mysqli_query($conn, $q);
     <div class="container-fluid bg-secondary mt-3 mb-3">
         <div class="d-flex flex-column align-items-center justify-content-center mb-5" style="min-height:100px;">
             <center>
-                <h2 class="animate-charcter" style="font-size: 40px;"><b
-                        style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+                <h2 class="animate-charcter" style="font-size: 40px;"><b>
                         &nbsp;Customized Products &nbsp;</b></h2>
             </center>
             <div class="d-inline-flex">
