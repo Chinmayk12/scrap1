@@ -54,11 +54,12 @@ include 'header.php';
                     </a>
                 </div>
             </div>
-            <div class="col-lg-7 pb-5">
-                <h3 style="text-transform:capitalize;" class="font-weight-semi-bold">
+
+            <div class="col-lg-7 pb-5" style="margin-top: 8% box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                <h3 style="text-transform:capitalize;" class="font-weight-semi-bold" >
                     <?php echo $data['name']; ?>
                 </h3>
-                <div class="d-flex mb-3">
+                <div class="d-flex mb-3" >
                     <div class="text-primary mr-2">
                         <small class="fas fa-star"></small>
                         <small class="fas fa-star"></small>
@@ -80,24 +81,11 @@ include 'header.php';
                         <input type="hidden" name="product_id" class="form-control bg-secondary text-center"
                             value="<?php echo $data['product_id']; ?>">
                         <div class="input-group quantity mr-3" style="width: 130px;">
-                            <!--<div class="input-group-btn">
-                            <button class="btn btn-primary btn-minus" >
-                            <i class="fa fa-minus"></i>
-                            </button>
-                        </div>
-                        <div class="input-group-btn">
-                            <button class="btn btn-primary btn-plus">
-                                <i class="fa fa-plus"></i>
-                            </button>
-                        </div>-->
                             <input type="number" name="qty" class="form-control bg-secondary text-center" value="1"
                                 min=1>
-
                         </div>
-
                         <i class="fa fa-shopping-cart mr-1"></i>
                         <input class="btn btn-primary px-3" type="submit" value="Add To Cart">
-
                     </div>
                 </form>
                 <div class="d-flex pt-2">

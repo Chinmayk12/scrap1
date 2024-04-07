@@ -17,10 +17,10 @@ include 'header.php';
 
 
 <!-- Cart Start -->
-<div class="container-fluid pt-5">
+<div class="container-fluid pt-5" >
     <div class="row px-xl-5">
-        <div class="col-lg-8 table-responsive mb-5">
-            <table class="table table-bordered text-center mb-0">
+        <div class="col-lg-8 table-responsive mb-5" >
+            <table class="table table-bordered text-center mb-0" >
                 <thead class="bg-secondary text-dark">
                     <tr>
                         <th>Product Image</th>
@@ -55,7 +55,7 @@ include 'header.php';
                            $total=$cart['totalprice'];
                            $qty=$cart['qty'];
                     ?>
-                <tbody class="align-middle">
+                <tbody class="align-middle" >
                     <tr>
                         <td class="align-middle"><img src="./user/<?php echo $product['image'];?>" alt=""
                                 style="width: 50px;"> </td>
