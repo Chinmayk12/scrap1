@@ -33,9 +33,9 @@ d) Try to run project in chrome by giving the command prompt : http://localhost/
 <br><br>
 
 # Login Credential:
-a) Username : 8010944027
+a) Username : 0123456789
 <br><br>
-b) Password : 123
+b) Password : 12345
 <br><nr>
 
 # Technologies Used:
