@@ -36,9 +36,10 @@ d) Try to run project in chrome by giving the command prompt : http://localhost/
 a) Username : 0123456789
 <br><br>
 b) Password : 12345
-<br><nr>
+<br><br>
 
 # Presentation PPT:
+[Scrap Swap.pdf](https://github.com/Chinmayk12/scrap1/files/14895667/Scrap.Swap.pdf)
 
 
 # Project Snapshot:
