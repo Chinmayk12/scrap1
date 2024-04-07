@@ -22,4 +22,13 @@ The underlying project helps user to view and buy trending artefacts of all the 
 
 # Project Snapshot:
 ![e7cbe3b2-484a-4b3c-8bd4-96c9b7d9ec17](https://github.com/Chinmayk12/scrap1/assets/137162238/404793fe-9077-40b6-aa88-3f11d3c4cf36)
+![f76f5f2c-7127-4158-80e2-178107bad528](https://github.com/Chinmayk12/scrap1/assets/137162238/190abb6c-c99c-42d0-adaa-821d88083f4c)
+![718b0be5-2a4d-4634-a9c3-64fbd6362cfb](https://github.com/Chinmayk12/scrap1/assets/137162238/231b93c0-5329-488c-9f32-42149b6c1400)
+![6d5a9232-2404-4e78-8cf9-5d456d48607c](https://github.com/Chinmayk12/scrap1/assets/137162238/2fbb1d85-b671-4720-9988-f647c4adc114)
+![8c35fe58-92ec-443c-86af-0e802f91a07d](https://github.com/Chinmayk12/scrap1/assets/137162238/da20f41a-4b9f-48ee-a175-2bdc4408bc7a)
+![055f2557-7cdd-4c37-bf9b-0c0078bee62d](https://github.com/Chinmayk12/scrap1/assets/137162238/3b3dd29b-4d51-460d-969a-2c6d809f23b8)
+![f8b7cf49-4d21-439d-af9e-9aaf4b4bb416](https://github.com/Chinmayk12/scrap1/assets/137162238/a73d5241-70f3-467f-9ab9-46e50abf3903)
+![80d32d8a-1728-442f-99d9-ca455c125c47](https://github.com/Chinmayk12/scrap1/assets/137162238/737138d3-f9e6-4b53-9044-e637ff691094)
+
+
 
